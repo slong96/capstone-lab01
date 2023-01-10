@@ -1,3 +1,13 @@
+"""
+• Write a program that asks for the names of all
+the classes you are taking this semester
+• Save these class names in a list
+• How will you know when the last class has
+been entered?
+• Print all the items in the list, one per line
+
+"""
+
 classes = []
 class_amount = int(input('How many classes are you taking? '))
 
