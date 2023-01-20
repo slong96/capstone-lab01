@@ -17,8 +17,17 @@ such as starting with a number, or containing invalid characters such as
 # This post explained it well and walked me through on how to do it.
 # https://www.educative.io/answers/how-do-you-convert-a-string-to-camelcase-format
 
-sentence = input('Enter a short sentence: ')
 
-i = sentence.title().replace(' ', '')
+def banner():
+  """ Display program name """
+  message = "Awesome camel case program!!"
+  stars = '*' * len(message)
+  print(f'\n{stars}\n{message} \n{stars}\n')
 
-print(''.join( [ i[0].lower(), i[1:] ] ))
+def main():
+  banner()
+  sentence = input('Enter a short sentence: ')
+  i = sentence.title().replace(' ', '')
+  print(''.join( [ i[0].lower(), i[1:] ] ))
+
+main()
